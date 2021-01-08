@@ -1,0 +1,4 @@
+2021-01-01 20:33:38,121 INFO  December30.Program - ******************** System startup
+2021-01-01 20:33:38,386 INFO  December30.Program - ******************** System shutdown
+2021-01-08 17:33:18,771 INFO  December30.Program - ******************** System startup
+2021-01-08 17:33:19,059 INFO  December30.Program - ******************** System shutdown

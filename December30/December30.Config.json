@@ -1,0 +1,5 @@
+﻿"MultiDBConfig": {
+	"ConnectionString": "Data Source=.;Initial Catalog=December30Test;Integrated Security=True",
+	"AllowDBWrite": "False",
+	"AppName": "Cinema"
+}
