@@ -1,0 +1,27 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Tests" (
+	"ID"	INTEGER NOT NULL,
+	"Car_ID"	INTEGER,
+	"IsPassed"	BOOL,
+	"Date"	DATETIME,
+	PRIMARY KEY("ID" AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS "Cars" (
+	"ID"	INTEGER NOT NULL,
+	"Manufacturer"	TEXT,
+	"Model"	TEXT,
+	"Year"	INTEGER,
+	PRIMARY KEY("ID" AUTOINCREMENT)
+);
+INSERT INTO "Tests" VALUES (1,2,'yes','2015-05-02');
+INSERT INTO "Tests" VALUES (2,4,'no','2012-08-09');
+INSERT INTO "Tests" VALUES (3,3,'yes','2010-03-05');
+INSERT INTO "Tests" VALUES (4,1,'no','2000-01-06');
+INSERT INTO "Tests" VALUES (5,5,'yes','2019-07-04');
+INSERT INTO "Cars" VALUES (1,'Mitsubishi','Lancer',1998);
+INSERT INTO "Cars" VALUES (2,'Honda','Accord',2010);
+INSERT INTO "Cars" VALUES (3,'Suzuki','Swift',1995);
+INSERT INTO "Cars" VALUES (4,'Skoda','Yeti',2012);
+INSERT INTO "Cars" VALUES (5,'Seat','Ibiza',2008);
+INSERT INTO "Cars" VALUES (7,'Toyota','Avensis',2016);
+COMMIT;
